@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="org.ruby-lang.rake" authoringToolVersion="0.8.7">
+  <title>Ruby <%= VERSION %></title>
+  <options customize="allow" allow-external-scripts="no"/>
+  <domains enable_localSystem="true"/>
+  <choices-outline>
+    <line choice="ruby"/>
+  </choices-outline>
+  <choice id="ruby" title="Ruby <%= VERSION %>">
+    <pkg-ref id="org.ruby-lang.installer"/>
+  </choice>
+  <pkg-ref id="org.ruby-lang.installer" installKBytes="<%= kbytes %>" version="<%= VERSION %>" auth="Root">#ruby-<%= VERSION %>.pkg</pkg-ref>
+</installer-script>
